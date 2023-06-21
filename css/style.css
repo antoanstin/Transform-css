@@ -1,0 +1,67 @@
+*{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+}
+div{
+	display:flex;
+	gap:50px;
+	padding:40px;
+	
+}
+div>div{
+	border:2px solid black;
+	width:50px;
+	height: 50px;
+	background-color: rgb(170, 243, 33);
+}
+.a1{
+	transform: translate(20px,10px);
+}
+.a2{
+	transform:translate(20px,20px);
+}
+.b1{
+	transform: scale(2);
+}
+.b2{
+	transform: scale(1.5,2);
+}
+.c1{
+	transform: skewX(30deg);
+}
+.c2{
+	transform: skewY(30deg);
+}
+.c3{
+	transform: skew(30deg,20deg);
+}
+.d1{
+	transform: rotate(30deg);
+}
+.d2{
+	transform: rotateX(60deg);
+}
+.d3{
+	transform: rotateY(30deg);
+}
+.e1{
+	transform: matrix(0.866,0.7,-0.8,0.866,0,0);
+}
+.e2:hover{
+	width:200px;
+	height:170px
+}
+.e2{
+	transition-property:all;
+	transition-duration: 2s;
+	transition-timing-function: linear;
+	transition-delay: 0.5s;
+}
+.e3:hover{
+	width:600px;
+	
+}
+.e3{
+	transition: all 3s ease 0.5s;
+}
